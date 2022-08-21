@@ -1,1 +1,116 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>XBCZ Tokenomics</title>
+    <style>
+body {
+  background-color: cadetblue;
+}
+h1 {
+  color: blanchedalmond;
+  text-align: left;
+}
+h2 {
+  color: cornsilk;
+  text-align: left;
+}
+p {
+  color: beige;
+  font-family: monospace;
+  font-size: 23px;
+}
+</style>
+  </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <body>
+    <article>
+    <header>
+     <h1>XBCZ:
+      <p>Utility tokens for <a href="https://ballooncatz.xyz" target="_blank">NFT character</a> enhancements & games;
+    </header>
+    </article>
+      <br>
+      <article>
+      <h2>Initial Token Offering (projected):
+      <p id="ito"></p>
+      <script>
+        const x = new Date(2022,08,09,19,00);
+        document.getElementById("ito").innerHTML = x;
+      </script>
+      </article>
+      <br>
+      <article><h2>Year One Tokenomics in Percentages (projected):</h2></article>
+        <canvas id="YOT" style="width:100%;max-width:600px">Your browser does not support the canvas tag.</canvas>
+        <script>
+        var xValues = ["EXCHANGES", "FROZEN", "FOUNDER", "AIRDROPS", "TEAM DEV", ];
+        var yValues = [2.5, 50, 10, 10, 27.5 ];
+        var barColors = [
+          "#b91d47",
+          "#00aba9",
+          "#2b5797",
+          "#e8c3b9",
+          "#1e7145"
+        ];
+        
+        new Chart("YOT", {
+          type: "doughnut",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            title: {
+              display: false,
+              text: "YEAR ONE TOKENOMICS"
+            }
+          }
+        });
+        </script>  
+        <br>
+        <br>
+        <article>
+            <h2>Total Initial Supply (to be blackholed):
+              <p id="TIS"></p>
+    <script>
+    let z = 1010101.0101;
+    document.getElementById("TIS").innerHTML = z;
+    </script>
+          </article>
+        <br>
+        <article>
+        <h2>Initial Mint Date:
+          <p id="imd"></p>
+  <script>
+  const y = new Date(2022,07,09,10,17);
+  document.getElementById("imd").innerHTML = y;
+  </script>
+        </article>
+        <br>
+        <article>
+          <h2>Created with the help of <a href="https://xumm.app" target="_blank">XUMM wallet</a> and <a href="https://xrpl.services/tools" target="_blank">XRPL Ledger Services</a>:
+            <p>All the speed and efficiency of the <a href="https://xrpl.org" target="_blank">XRPL</a>;</p>
+          </article>
+          <br>
+          <article>
+            <h2>Establish trustline to receive XBCZ tokens:</h2>
+            <p>Click <a href="https://xrpl.to/trustset/57113c22f136e343bd405accd19b7a97" target="_blank">XRPL.TO</a> to generate QR code to set trustline to XUMM wallet;</p>
+            <p>alternatively, go to the <a href="https://xrpl.services/tokens" target="_blank">XRPL Ledger Services</a> Tokens page, and search for XBCZ;</p>
+          </article>
+          <br>
+          <article>
+            <h2>XRPL Token Information:</h2>
+            <p>Issuer: rpfNtYnahCF8vKDdPzETV1NQM1j42LEYcZ</p>
+            <p>Name: XBCZ</p>
+            <p>Currency: XBCZ</p>
+            <p>currency Hex-code: 5842435A00000000000000000000000000000000</p>
+            <p>Supply: 1010101.0101</p>
+          </article>
+          <br>
+        <article>
+<h2>Token founder:
+<p>Geronimo Inutiq aka <a href="https://twitter.com/timespaceimage" target="_blank">timespaceimage</a></p> </article>    
+</body>
+</html>
